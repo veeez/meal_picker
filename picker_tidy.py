@@ -22,7 +22,12 @@ else:
 extras = input("do you want sides?: " )
 if extras == "yes":
     random_sides = random.choice(sides)
-meal = (random_meat + " and " + random_sides)
+
+#decide if vego or meat meal
+if meal == "meat":
+ meal = (random_meat + " and " + random_sides)
+elif meal == "vego":
+    meal = (random_vego + " and " + random_sides)
 
 print("Your dinner is " + meal)
 
